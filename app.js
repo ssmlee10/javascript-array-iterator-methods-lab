@@ -125,7 +125,7 @@ Hint: Return a new object literal from the callback that looks like:
 
 // Complete the exercise in the space below:
 
-let inventorNames = inventors.map((inventor) => {
+let inventorNames = inventors.map(inventor => {
   return `first: ${inventor.first}, last: ${inventor.last}`;
 });
 
@@ -149,13 +149,11 @@ console.log('Exercise 2 correct result: ', [
 /*
 Exercise 3: Array.prototype.sort()
 
-Sort the inventors by birth date in ascending order (from those born furthest in
-the past to those born most recently).
+Sort the inventors by birth date in ascending order (from those born furthest in the past to those born most recently).
 */
 
-let sortedByBirthYear = [];
-
 // Complete the exercise in the space below:
+let sortedByBirthYear = inventors.sort((a, b) => a.year - b.year);
 
 // Check your work:
 console.log('Exercise 3 my result: ', sortedByBirthYear);
