@@ -207,9 +207,7 @@ Use the Array.prototype.map() method to reformat each name in the 'people'
 array. The goal is to convert names from "Last, First" format to "First Last" 
 format.
 
-Hint: Use the String.prototype.split() method to separate the first and last 
-      names. You can split the string using ', ' as the separator.
-      After splitting the names, rearrange them to the "First Last" format.
+Hint: Use the String.prototype.split() method to separate the first and last names. You can split the string using ', ' as the separator. After splitting the names, rearrange them to the "First Last" format.
 */
 
 // Complete the exercise in the space below:
@@ -267,8 +265,7 @@ console.log('Exercise 5 correct result: ', [
 /*
 Exercise 6: Array.prototype.some()
 
-Determine if there is at least one person in the devs array who is 18 years 
-old or older.
+Determine if there is at least one person in the devs array who is 18 years old or older.
 
 - You have an array of people with their respective ages.
 - Use the Array.prototype.some() method to check if any person in the array is 18 years old or older.
@@ -286,3 +283,22 @@ const isAdultPresent = devs.some((dev) => {
 // Check your work:
 console.log('Exercise 6 my result: ', isAdultPresent);
 console.log('Exercise 6 correct result: ', true);
+
+/*
+Exercise 7: Array.prototype.every()
+
+Use Array.prototype.every() to determine if every person in the devs array is 19 years old or older.
+
+- You have an array of individuals, each with their year of birth represented by the 'year' property.
+- Use the Array.prototype.every() method to verify if every individual in the array is at least 19 years old.
+- Store the result (true or false) in the variable 'isEveryone19OrOlder'.
+*/
+
+// Complete the exercise in the space below:
+let isEveryone19OrOlder = devs.every((dev) => {
+  return dev.year < 2006;
+});
+
+// Check your work:
+console.log('Exercise 7 my result: ', isEveryone19OrOlder);
+console.log('Exercise 7 correct result: ', false);
